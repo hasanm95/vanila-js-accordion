@@ -1,0 +1,99 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+} 
+html{
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	scroll-behavior: smooth;
+}
+body{
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-size: 16px;
+	color: #ccc;
+	line-height: 1.5;
+	background-color: #fff;
+	font-weight: 400;
+	overflow: hidden;
+}
+
+
+.accordion {
+	max-width: 600px;
+	margin: 20px auto;
+}
+.accordion__item {
+	border: 1px solid #d4d4d4;
+  }
+  
+  .accordion__item.active .accordion__icon.opened {
+	display: block;
+  }
+  
+  .accordion__item.active .accordion__icon.closed {
+	display: none;
+  }
+  
+  .accordion__item.active .accordion__content {
+	display: block;
+  }
+  
+  .accordion__item + .accordion__item {
+	border-top: none;
+  }
+  
+  .accordion__btn {
+	width: 100%;
+	position: relative;
+	padding: 15px 20px;
+	line-height: 1;
+	cursor: pointer;
+	outline: none;
+  }
+  
+  .accordion__title {
+	font-size: 18px;
+	font-weight: 700;
+	display: block;
+	text-align: left;
+	color: #54595f;
+	padding-left: 25px;
+	line-height: 1.2;
+  }
+  
+  .accordion__icon {
+	position: absolute;
+	left: 16px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+  }
+  
+  .accordion__icon i {
+	font-size: 20px;
+	font-weight: 500;
+  }
+  
+  .accordion__icon.opened {
+	display: none;
+  }
+  
+  .accordion__icon.closed {
+	display: block;
+  }
+  
+  .accordion__content {
+	display: none;
+	border-top: 1px solid #d4d4d4;
+	padding-left: 20px;
+	padding: 15px 20px;
+  }
+  
+  .accordion__content p {
+	margin: 10px 0;
+	color: #7a7a7a;
+  }
